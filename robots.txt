@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://everedez.github.io/sitemap.xml

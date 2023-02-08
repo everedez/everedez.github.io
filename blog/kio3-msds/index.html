@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <meta name="generator" content="Hugo 0.105.0">
+  <link rel="canonical" href="https://everedez.github.io/blog/kio3-msds/">
+
+  
+    
+    <meta name="description" content=".group(&amp;quot;.keyname&amp;quot;)
+.attr(&amp;quot;class&amp;quot;, &amp;quot;keyname-box&amp;quot;)
+.attr(&amp;quot;x&amp;quot;,function(d){return x}})
+.attr(&amp;quot;y&amp;quot;,function(d){return y});
+.domain(function(d){ return d.keyname; })
+.stop();
+}, 2000);
+function render() {
+if ( d3.event.sourceId === &amp;quot;y2&amp;quot;:
+drawSource(this.viewerDiv, &amp;quot;y2&amp;quot;)
+.attr(&amp;quot;x&amp;quot;,function(d){})
+.attr(&amp;quot;y&amp;quot;, function(d){ return (100&#43;50)});
+I was hoping that I could check if the right axis is on the left (0-150)?
+If it is 0-50, for example, there is no scroll so I got the rectangle I wanted, but I would still like to see the actual text used for the legend.">
+  
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="theme-color" content="#ffffff">
+
+  <link rel="stylesheet" type="text/css" href="/css/paper.css">
+
+  
+  
+  <link rel="stylesheet" type="text/css" href="/css/custom.css">
+  
+  
+    
+  
+
+  
+  
+  <title>Kio3 Msds | Evered Ez</title>
+</head>
+
+  <body>
+    <div class="container paper">
+      <nav class="border split-nav">
+  <div class="nav-brand">
+    <h3><a href="/">Evered Ez</a></h3>
+  </div>
+  <div class="collapsible">
+    <input id="collapsible1" type="checkbox" name="collapsible1">
+    <button>
+    <label for="collapsible1">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </label>
+    </button>
+    <div class="collapsible-body">
+      <ul class="inline">
+      
+      </ul>
+    </div>
+  </div>
+</nav>
+      <main>
+        
+
+<h1>Kio3 Msds</h1>
+<p>
+.group(&amp;quot;.keyname&amp;quot;)<br>
+.attr(&amp;quot;class&amp;quot;, &amp;quot;keyname-box&amp;quot;)<br>
+.attr(&amp;quot;x&amp;quot;,function(d){return x}})<br>
+.attr(&amp;quot;y&amp;quot;,function(d){return y});<br>
+.domain(function(d){ return d.keyname; })<br>
+.stop();<br>
+}, 2000);<br>
+function render() {<br>
+</p>
+<p>if ( d3.event.sourceId === &amp;quot;y2&amp;quot;:</p>
+<p>
+drawSource(this.viewerDiv, &amp;quot;y2&amp;quot;)<br>
+.attr(&amp;quot;x&amp;quot;,function(d){})<br>
+.attr(&amp;quot;y&amp;quot;, function(d){ return (100+50)});<br>
+I was hoping that I could check if the right axis is on the left (0-150)?<br>
+</p>
+<p>If it is 0-50, for example, there is no scroll so I got the rectangle I wanted, but I would still like to see the actual text used for the legend.</p>
+<h2>UPDATE</h2>
+<p>I used this code to test, it works well:</p>
+<p>function render() {</p>
+<p>if ( d3.event.sourceId === &amp;quot;y2&amp;quot;:</p>
+<p>
+drawSource(this.viewerDiv, &amp;quot;y2&amp;quot;)<br>
+.attr(&amp;quot;x&amp;quot;, function(d, k) { return (70 + 25) - ( (50 + d) / 2 ) })<br>
+.attr(&amp;quot;y&amp;quot;, function(d, k) { return (100  + k) + 50 + (50 - 70) }).call(this.updateLabels);<br>
+</p>
+<p>OK, I found the answer, here&amp;#x27;s the code, if anyone wants to review it:</p>
+<p>function render() {</p>
+<p>if ( d3.event.sourceId === &amp;quot;y2&amp;quot;:</p>
+<p>
+drawSource(this.viewerDiv, &amp;quot;y2&amp;quot;)<br>
+.attr(&amp;quot;x&amp;quot;,function(d,k) {return (70 + 25) - ( (50 + d) *(70 / 2 + 40) })<br>
+.attr(&amp;quot;y&amp;quot;, function(d,k) {return (100  + k) + 50 + (50 - 70) }).call(this.<br>
+</p>
+
+
+  
+
+      </main>
+  </div>
+  <script type='text/javascript'>(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})(window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym"); ym(91504969,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:true});</script><noscript><div><img src='https://mc.yandex.ru/watch/91504969' style='position:absolute;left:-9999px;'/></div></noscript>
+  </body>
+</html>

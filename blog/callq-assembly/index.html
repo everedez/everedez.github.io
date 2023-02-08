@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <meta name="generator" content="Hugo 0.105.0">
+  <link rel="canonical" href="https://everedez.github.io/blog/callq-assembly/">
+
+  
+    
+    <meta name="description" content="From AdaCore
+Abstract
+Assembly is a High-Level abstract Machine Programming language. It is based
+on the type-level abstraction by providing at any given time a class-level
+machine which performs a single operation. Assembly uses this abstract
+level to represent the same level as the (class-level) syntax.
+Additionally it is controlled by a builtin lexer, an implicit message-writer,
+a constant runtime interpreter and a number of metaprogramming facilities.
+Synopsis
+Instructions">
+  
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="theme-color" content="#ffffff">
+
+  <link rel="stylesheet" type="text/css" href="/css/paper.css">
+
+  
+  
+  <link rel="stylesheet" type="text/css" href="/css/custom.css">
+  
+  
+    
+  
+
+  
+  
+  <title>Callq Assembly | Evered Ez</title>
+</head>
+
+  <body>
+    <div class="container paper">
+      <nav class="border split-nav">
+  <div class="nav-brand">
+    <h3><a href="/">Evered Ez</a></h3>
+  </div>
+  <div class="collapsible">
+    <input id="collapsible1" type="checkbox" name="collapsible1">
+    <button>
+    <label for="collapsible1">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </label>
+    </button>
+    <div class="collapsible-body">
+      <ul class="inline">
+      
+      </ul>
+    </div>
+  </div>
+</nav>
+      <main>
+        
+
+<h1>Callq Assembly</h1>
+<p>
+From AdaCore<br>
+Abstract<br>
+Assembly is a High-Level abstract Machine Programming language. It is based<br>
+on the type-level abstraction by providing at any given time a class-level<br>
+machine which performs a single operation. Assembly uses this abstract<br>
+level to represent the same level as the (class-level) syntax.<br>
+Additionally it is controlled by a builtin lexer, an implicit message-writer,<br>
+a constant runtime interpreter and a number of metaprogramming facilities.<br>
+Synopsis<br>
+Instructions<br>
+Instruction set<br>
+Code<br>
+Compile<br>
+Code<br>
+Compile and load<br>
+While there are several variations of Assembly in the literature and in<br>
+the online compiler forum discussions, it will be recalled that the goal<br>
+of Assembly is to express efficient high-level code and not to use<br>
+&amp;#x27;inline&amp;#x27; assembly language.<br>
+In principle Assembly could be compiled into native machine code by a<br>
+small &amp;quot;insetter&amp;quot;, however it has poor performance in the size of the<br>
+source code, and some operations (particularly operations with over-flow<br>
+arrays) are impractical to inline. Instead of inline assembly<br>
+instruments such as the assembly interpreter at the end, you can use<br>
+CAS [Computer-Aided Software Engineering] and/or vhdl-tools to compile<br>
+Assembly or generate native machine code. The following example<br>
+provides an alternative approach which does not generate native machine<br>
+code or directly compile the code in, but is a wrapper around the native<br>
+machine code and interpreters. For further information about compiling<br>
+Assembly this syntax is relevant.<br>
+(The following note is a description of the type-level abstraction.<br>
+If you are interested in type level language see also a section on Basic<br>
+Instruction set. Note that the abstract syntax is a low level.<br>
+By convention low-level language (or low-level assembly language, and<br>
+at any given time a.la extension to that language) is separated into at<br>
+least two levels. At the lower level is either code or a type-level<br>
+abstraction, and at the higher level you have a general collection of<br>
+operations. This collection is just referred to as a &amp;quot;language&amp;quot;.<br>
+</p>
+
+
+  
+
+      </main>
+  </div>
+  <script type='text/javascript'>(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})(window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym"); ym(91504969,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:true});</script><noscript><div><img src='https://mc.yandex.ru/watch/91504969' style='position:absolute;left:-9999px;'/></div></noscript>
+  </body>
+</html>

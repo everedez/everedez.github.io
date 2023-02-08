@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <meta name="generator" content="Hugo 0.105.0">
+  <link rel="canonical" href="https://everedez.github.io/blog/seth-the-programmer-discord/">
+
+  
+    
+    <meta name="description" content="Many programs are run in Discord, usually with one group of users. Developers don’t want developers to be forced to join to their main servers to create new programs. Instead, these programs are shared to reduce the overhead of constantly running the program against a central server. You can see many of these programs in action at Discord’s Developer site at dev.fugro.io.
+How to Run Servers in Discord
+Development servers are hosted in Discord’s Dev channel by running a Windows command shell.">
+  
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="theme-color" content="#ffffff">
+
+  <link rel="stylesheet" type="text/css" href="/css/paper.css">
+
+  
+  
+  <link rel="stylesheet" type="text/css" href="/css/custom.css">
+  
+  
+    
+  
+
+  
+  
+  <title>Seth The Programmer Discord | Evered Ez</title>
+</head>
+
+  <body>
+    <div class="container paper">
+      <nav class="border split-nav">
+  <div class="nav-brand">
+    <h3><a href="/">Evered Ez</a></h3>
+  </div>
+  <div class="collapsible">
+    <input id="collapsible1" type="checkbox" name="collapsible1">
+    <button>
+    <label for="collapsible1">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </label>
+    </button>
+    <div class="collapsible-body">
+      <ul class="inline">
+      
+      </ul>
+    </div>
+  </div>
+</nav>
+      <main>
+        
+
+<h1>Seth The Programmer Discord</h1>
+<p>Many programs are run in Discord, usually with one group of users. Developers don’t want developers to be forced to join to their main servers to create new programs. Instead, these programs are shared to reduce the overhead of constantly running the program against a central server. You can see many of these programs in action at Discord’s Developer site at dev.fugro.io.</p>
+<p>How to Run Servers in Discord</p>
+<p>Development servers are hosted in Discord’s Dev channel by running a Windows command shell. They do not come with a GUI, so you need to install a Windows sub-process to create the server.</p>
+<p>One such sub-process comes with a command like this:</p>
+<p>
+C:\Windows\system32&amp;gt;.nim [<br>
+–a server=Server,serverPort=7001,serversList=[/path/to/servers.json<br>
+] ––bind [ -d [-S], serverlist ]<br>
+] /more [<br>
+–start,serversList ]<br>
+] –setenv serverName serverName<br>
+serverName<br>
+The easiest way to run servers is by running a command called “run.nim” on the server that will create their own shell.<br>
+Run.nim command on server<br>
+Code which runs the start command<br>
+</p>
+<p>RUN setenv serverName serverName SEND # Don’t send an empty string if the server doesn’t already exist! ServerList = //... # Create the full list of servers and channel # Delete any that already exist ServerList += string /join &amp;quot;&amp;quot;“”Servers”“”Chan”“”Servers”“</p>
+<p>
+Thus the start command need only send the name of the server for it to appear on the server list.<br>
+If you have a command somewhere that launches the “run.nim” command for the server it works.<br>
+C:\Documents and Settings\Josh\My Documents\iTunes&amp;gt; “run.nim” The CMD command windows! [ … ]<br>
+</p>
+<p>If you have not set the server list through, for instance, the gui or a command line utility, you need to create it first by typing its command.</p>
+
+
+  
+
+      </main>
+  </div>
+  <script type='text/javascript'>(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})(window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym"); ym(91504969,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:true});</script><noscript><div><img src='https://mc.yandex.ru/watch/91504969' style='position:absolute;left:-9999px;'/></div></noscript>
+  </body>
+</html>

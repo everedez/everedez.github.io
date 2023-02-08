@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <meta name="generator" content="Hugo 0.105.0">
+  <link rel="canonical" href="https://everedez.github.io/blog/rfc-4648/">
+
+  
+    
+    <meta name="description" content="This RFC proposes to document how IETF Subrfc4871 defines
+functions for implementing the IANA DNS SRV 1.1 SRV
+information from a top-level authoritative domain i.e.,
+a domain that it doesn&amp;#x27;t control.
+This RFC seeks to
+implement function 2 of SRV documentation found in RFC 4648.
+RFC 4648 defines functions for finding the version 1
+and 2 IANA SRV information of a domain.
+Subject: Tuning Sizing and Limitations of ICANN Domain Names">
+  
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="theme-color" content="#ffffff">
+
+  <link rel="stylesheet" type="text/css" href="/css/paper.css">
+
+  
+  
+  <link rel="stylesheet" type="text/css" href="/css/custom.css">
+  
+  
+    
+  
+
+  
+  
+  <title>Rfc 4648 | Evered Ez</title>
+</head>
+
+  <body>
+    <div class="container paper">
+      <nav class="border split-nav">
+  <div class="nav-brand">
+    <h3><a href="/">Evered Ez</a></h3>
+  </div>
+  <div class="collapsible">
+    <input id="collapsible1" type="checkbox" name="collapsible1">
+    <button>
+    <label for="collapsible1">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </label>
+    </button>
+    <div class="collapsible-body">
+      <ul class="inline">
+      
+      </ul>
+    </div>
+  </div>
+</nav>
+      <main>
+        
+
+<h1>Rfc 4648</h1>
+<p>
+This RFC proposes to document how IETF Subrfc4871 defines<br>
+functions for implementing the IANA DNS SRV 1.1 SRV<br>
+information from a top-level authoritative domain i.e.,<br>
+a domain that it doesn&amp;#x27;t control.<br>
+This RFC seeks to<br>
+implement function 2 of SRV documentation found in RFC 4648.<br>
+RFC 4648 defines functions for finding the version 1<br>
+and 2 IANA SRV information of a domain.<br>
+</p>
+<h2>Subject:</h2>
+<p>Tuning Sizing and Limitations of ICANN Domain Names</p>
+<h2>Issued:</h2>
+<p>(written to by M. Gropp)</p>
+<h2>Status:</h2>
+<h3>Present</h3>
+<h3>Additional Comments:</h3>
+<p>
+Both IANA and ICANN have addressed the need for<br>
+sizing ICANN domain names. Specifically the ICANN<br>
+domains are over 100,000 domain names, while IANA has<br>
+64,000.<br>
+This documentation proposes to evaluate<br>
+using larger domain names, which could allow for<br>
+sizing the entire IANA set. The proposal isn&amp;#x27;t<br>
+feasible for use in IPv4 name-resolution due to both<br>
+bound<br>
+routes/internets, but an attempt is made to make an<br>
+alternative set available via non-routable ICANN names.<br>
+RFC 4648 specifies how to read IANA SRV 1.1 info<br>
+from DNS root servers in top-level domains, and the<br>
+problem is the domain name itself has to be mapped to<br>
+something visible on the IANA DNS root servers; no less<br>
+than 12 domains per root server are excluded in this<br>
+RFC.<br>
+Non-Routable Names<br>
+Non-routable names are names that don&amp;#x27;t have<br>
+any associated real, routable domain for the name to<br>
+fall under in order to create a domain name.<br>
+Non-routable names are not suitable for IPv4<br>
+domain name resolution due to routing limitations and are<br>
+not suitable for ICANN domains either due to the<br>
+ability to route them via a &amp;quot;proto-domain&amp;quot;<br>
+alias.<br>
+Pending Moved, Version 1 of RFC 4648 was authored by<br>
+Marc Gropp, under the name &amp;quot;Non-Routable Names&amp;quot;.<br>
+Moved<br>
+This RFC will be expanded to use a non-routable name<br>
+for the IANA DNS root if necessary.<br>
+</p>
+
+
+  
+
+      </main>
+  </div>
+  <script type='text/javascript'>(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})(window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym"); ym(91504969,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:true});</script><noscript><div><img src='https://mc.yandex.ru/watch/91504969' style='position:absolute;left:-9999px;'/></div></noscript>
+  </body>
+</html>

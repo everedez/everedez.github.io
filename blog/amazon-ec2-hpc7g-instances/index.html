@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <meta name="generator" content="Hugo 0.105.0">
+  <link rel="canonical" href="https://everedez.github.io/blog/amazon-ec2-hpc7g-instances/">
+
+  
+    
+    <meta name="description" content="**CFR:** All: 1641/05/4952 **PR:** All
+**Tested on:** Local Linux instances that were removed from a hosting
+environment for various reasons.
+**Total:** 1
+**This process is currently unresponsive. You may be attempting to do
+something that you are not permitted to do, or that will otherwise cause
+others to see unsafe or unworkable behaviour**.
+The instances are exposed using an IP address address that is located within the DFSG region (i.">
+  
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="theme-color" content="#ffffff">
+
+  <link rel="stylesheet" type="text/css" href="/css/paper.css">
+
+  
+  
+  <link rel="stylesheet" type="text/css" href="/css/custom.css">
+  
+  
+    
+  
+
+  
+  
+  <title>Amazon Ec2 Hpc7g Instances | Evered Ez</title>
+</head>
+
+  <body>
+    <div class="container paper">
+      <nav class="border split-nav">
+  <div class="nav-brand">
+    <h3><a href="/">Evered Ez</a></h3>
+  </div>
+  <div class="collapsible">
+    <input id="collapsible1" type="checkbox" name="collapsible1">
+    <button>
+    <label for="collapsible1">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </label>
+    </button>
+    <div class="collapsible-body">
+      <ul class="inline">
+      
+      </ul>
+    </div>
+  </div>
+</nav>
+      <main>
+        
+
+<h1>Amazon Ec2 Hpc7g Instances</h1>
+<p>
+**CFR:** All: 1641/05/4952 **PR:** All<br>
+**Tested on:** Local Linux instances that were removed from a hosting<br>
+environment for various reasons.<br>
+**Total:** 1<br>
+**This process is currently unresponsive. You may be attempting to do<br>
+something that you are not permitted to do, or that will otherwise cause<br>
+others to see unsafe or unworkable behaviour**.<br>
+</p>
+<p>The instances are exposed using an IP address address that is located within the DFSG region (i.e., AWS Region West) because each cloud is responsible for one DFSG and/or Amazon EC2 cloud is responsible for one DFSG region, you can test the functionality of each using:</p>
+<p>
+* The test cases<br>
+* The directory that contains the test cases<br>
+* A script that execute the test case<br>
+## Configuring Instances<br>
+[Complete page](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-overview.html)<br>
+## Instances that Are Removed From a Hosting Environment for Misfeature<br>
+</p>
+<p>Every instance that is removed from your instance group for a legitimate reason must be removed from your instance group for a reason that you do not want replicated when running in your hosted environment. This can usually occur through the following situations:</p>
+<p>
+* Your instance&amp;#x27;s capacity has been exhausted<br>
+* Your host server has not been updated for 10 years<br>
+* Your version of Istio is no longer supported<br>
+* Your database configuration does not use an Istio database<br>
+* Your instance has been marked for removal.<br>
+This document describes the important configurations that you must have when running in a hosting environment.<br>
+1. **Be sure** that all instances have been added to your DFSG.<br>
+</p>
+<p>`aws ec2 describe-instances --filters &amp;quot;Instance-Id eq &amp;#x27;(your Istio Instance Id)&amp;#x27; --filter-attribute Name &amp;#x27;Dfsg.Name&amp;#x27;&amp;quot; --region-name &amp;#x27;us-east-1&amp;#x27;`</p>
+<p>2. **Don&amp;#x27;t have more than one instance in your DFSG**.</p>
+
+
+  
+
+      </main>
+  </div>
+  <script type='text/javascript'>(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})(window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym"); ym(91504969,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:true});</script><noscript><div><img src='https://mc.yandex.ru/watch/91504969' style='position:absolute;left:-9999px;'/></div></noscript>
+  </body>
+</html>

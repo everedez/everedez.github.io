@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <meta name="generator" content="Hugo 0.105.0">
+  <link rel="canonical" href="https://everedez.github.io/blog/2-chlorobenzoic-acid/">
+
+  
+    
+    <meta name="description" content="B.m. 4.890 0.0 0.0 9.0
+C.m. 4.890 0.1 2.9 8.0
+C.m. 4.890 0.4 2.7 7.0
+D.p. 0.00 0.2 1.7 1.1
+D.p. 0.00 0.3 0.0 1.1
+D.p. 0.00 0.0 0.1 0.1
+D.p. 0.00 0.1 0.2 0.2
+D.p. 0.00 0.2 0.0 1.1
+D.p. 0.00 0.1 0.1 0.1
+C.m. 4.890 0.0 0.0 7.0
+Compiled from Wireshark API dump, use the window(shark_port_0_window) to select particular interface (if not available on the specific channel)">
+  
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="theme-color" content="#ffffff">
+
+  <link rel="stylesheet" type="text/css" href="/css/paper.css">
+
+  
+  
+  <link rel="stylesheet" type="text/css" href="/css/custom.css">
+  
+  
+    
+  
+
+  
+  
+  <title>2-chlorobenzoic Acid | Evered Ez</title>
+</head>
+
+  <body>
+    <div class="container paper">
+      <nav class="border split-nav">
+  <div class="nav-brand">
+    <h3><a href="/">Evered Ez</a></h3>
+  </div>
+  <div class="collapsible">
+    <input id="collapsible1" type="checkbox" name="collapsible1">
+    <button>
+    <label for="collapsible1">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </label>
+    </button>
+    <div class="collapsible-body">
+      <ul class="inline">
+      
+      </ul>
+    </div>
+  </div>
+</nav>
+      <main>
+        
+
+<h1>2-chlorobenzoic Acid</h1>
+<p>
+B.m.  4.890  0.0   0.0   9.0<br>
+C.m.  4.890  0.1   2.9   8.0<br>
+C.m.  4.890  0.4   2.7   7.0<br>
+D.p.  0.00   0.2   1.7   1.1<br>
+D.p.  0.00   0.3   0.0   1.1<br>
+D.p.  0.00   0.0   0.1   0.1<br>
+D.p.  0.00   0.1   0.2   0.2<br>
+D.p.  0.00   0.2   0.0   1.1<br>
+D.p.  0.00   0.1   0.1   0.1<br>
+C.m.  4.890     0.0   0.0   7.0<br>
+</p>
+<p>Compiled from Wireshark API dump, use the window(shark_port_0_window) to select particular interface (if not available on the specific channel)</p>
+<p>The problem was the LISP mode and the fact that port 0 is disabled for traffic received from LISP mode. Also the driver version was too old.</p>
+<p>In particular the driver version is 6.04 to 7.10 or maybe 8.43L for Windows 64-bit/x86 version (I didn&amp;#x27;t test the 8.35L version).</p>
+<p>The problem was solved by editing lisp.conf (filename &amp;quot;lisp.conf&amp;quot;) with this line :</p>
+<p>lisp.send_from_lisp_mode = 1;</p>
+<p>Now packets are being forwarded from the LISP interface</p>
+<h2>UPDATE :</h2>
+<p>
+In the Wireshark API dump 1, the LISP mode is being called from the kernel<br>
+/dev/cps0 is /dev/w1 (IRQs not available)<br>
+https://stackoverflow.<br>
+</p>
+
+
+  
+
+      </main>
+  </div>
+  <script type='text/javascript'>(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})(window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym"); ym(91504969,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:true});</script><noscript><div><img src='https://mc.yandex.ru/watch/91504969' style='position:absolute;left:-9999px;'/></div></noscript>
+  </body>
+</html>

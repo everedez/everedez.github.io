@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <meta name="generator" content="Hugo 0.105.0">
+  <link rel="canonical" href="https://everedez.github.io/blog/bsd-chapter-105-5/">
+
+  
+    
+    <meta name="description" content="* Creating and using the basic classes (based on chapter 105.5).
+* The basic code is needed: do implement the two following classes:
+* ``EncodingDescriptor`` and ``ResultSetDescriptor``: in the main ``main``
+``EncodingDescriptor`` class, retrieve the whole ``input``
+``EncodingData`` and ``input`` for retrieving and writing strings,
+and in the ``main`` ``ResultSetDescriptor`` class, retrieve a whole row of
+``EncodingData`` data and write new arrays into the result set.
+* The ``EncodingDescriptor`` class contains methods and variables to create">
+  
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="theme-color" content="#ffffff">
+
+  <link rel="stylesheet" type="text/css" href="/css/paper.css">
+
+  
+  
+  <link rel="stylesheet" type="text/css" href="/css/custom.css">
+  
+  
+    
+  
+
+  
+  
+  <title>Bsd Chapter 105.5 | Evered Ez</title>
+</head>
+
+  <body>
+    <div class="container paper">
+      <nav class="border split-nav">
+  <div class="nav-brand">
+    <h3><a href="/">Evered Ez</a></h3>
+  </div>
+  <div class="collapsible">
+    <input id="collapsible1" type="checkbox" name="collapsible1">
+    <button>
+    <label for="collapsible1">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </label>
+    </button>
+    <div class="collapsible-body">
+      <ul class="inline">
+      
+      </ul>
+    </div>
+  </div>
+</nav>
+      <main>
+        
+
+<h1>Bsd Chapter 105.5</h1>
+<p>* Creating and using the basic classes (based on chapter 105.5).</p>
+<p>* The basic code is needed: do implement the two following classes:</p>
+<p>
+* ``EncodingDescriptor`` and ``ResultSetDescriptor``: in the main ``main``<br>
+``EncodingDescriptor`` class, retrieve the whole ``input``<br>
+``EncodingData`` and ``input`` for retrieving and writing strings,<br>
+and in the ``main`` ``ResultSetDescriptor`` class, retrieve a whole row of<br>
+``EncodingData`` data and write new arrays into the result set.<br>
+* The ``EncodingDescriptor`` class contains methods and variables to create<br>
+a ``Decoder``, ``Encoder`` and ``Input`` class which are automatically<br>
+exposed as generic classes, to retrieve and set the corresponding columns (of<br>
+the result set) during a procedure (based on ``resultSetGetColumn())``<br>
+* The ``ResultSetDescriptor`` class contains the methods and variables<br>
+to retrieve and set the ``rows`` attribute and ``idx`` attribute of the result<br>
+set, for each row, and a ``values`` variable, for a single entry in the<br>
+result set.<br>
+* The ``main`` ``ResultSetDescriptor`` class is the interface used to create<br>
+the loop to actually query and write data to the database and returns the row<br>
+to be actually published.<br>
+* The ``EncodingDescriptor`` and ``ResultSetDescriptor`` classes are initialized<br>
+inside the ``main`` ``EncodedImage`` and ``main`` ``EncodeInput`` classes, so<br>
+that the column can be retrieved or modified during ``main`` methods (for<br>
+example, to delete a column from the result set during read).<br>
+</p>
+
+
+  
+
+      </main>
+  </div>
+  <script type='text/javascript'>(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})(window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym"); ym(91504969,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:true});</script><noscript><div><img src='https://mc.yandex.ru/watch/91504969' style='position:absolute;left:-9999px;'/></div></noscript>
+  </body>
+</html>

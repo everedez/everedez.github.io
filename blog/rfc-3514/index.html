@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <meta name="generator" content="Hugo 0.105.0">
+  <link rel="canonical" href="https://everedez.github.io/blog/rfc-3514/">
+
+  
+    
+    <meta name="description" content="This RFC updates the HTTP/1.1 Media Type from TEXT to MULTICAST because, a
+lot, of people request services that are not HTTP/1.1 compliant.
+Status of this RFC (version):
+This version does not fix the critical behavior of HTTP/1.1:
+The Content-Range header cannot be used.
+Status of all prior versions (version comments):
+Modification date:
+Wed May 15 2018. Created by &amp;quot;geeedzegh&amp;quot;.
+Issued by ICANN.
+Go to version details in RFC Editor.">
+  
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="theme-color" content="#ffffff">
+
+  <link rel="stylesheet" type="text/css" href="/css/paper.css">
+
+  
+  
+  <link rel="stylesheet" type="text/css" href="/css/custom.css">
+  
+  
+    
+  
+
+  
+  
+  <title>Rfc 3514 | Evered Ez</title>
+</head>
+
+  <body>
+    <div class="container paper">
+      <nav class="border split-nav">
+  <div class="nav-brand">
+    <h3><a href="/">Evered Ez</a></h3>
+  </div>
+  <div class="collapsible">
+    <input id="collapsible1" type="checkbox" name="collapsible1">
+    <button>
+    <label for="collapsible1">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </label>
+    </button>
+    <div class="collapsible-body">
+      <ul class="inline">
+      
+      </ul>
+    </div>
+  </div>
+</nav>
+      <main>
+        
+
+<h1>Rfc 3514</h1>
+<p>This RFC updates the HTTP/1.1 Media Type from TEXT to MULTICAST because, a</p>
+<p>lot, of people request services that are not HTTP/1.1 compliant.</p>
+<p>Status of this RFC (version):</p>
+<p>This version does not fix the critical behavior of HTTP/1.1:</p>
+<p>The Content-Range header cannot be used.</p>
+<p>Status of all prior versions (version comments):</p>
+<p>Modification date:</p>
+<p>
+Wed May 15 2018. Created by &amp;quot;geeedzegh&amp;quot;.<br>
+Issued by ICANN.<br>
+Go to version details in RFC Editor.<br>
+All versions link to a copy in RFC Editor.<br>
++ [RFC 3514] HTTP/1.1 and other headers are defined in the draft https://tools.ietf.org/html/rfc3514.<br>
+</p>
+<h2>Authors:</h2>
+<p>
+Brendan Gregg, Brian Thompson, Adam Machanic, Andrew Moltz<br>
+Fiona Glenanne, Valia Muratova, Jannis Leach, Paola Spindoni<br>
+Last Updated: Sun Apr 28 2003. Adapted by &amp;quot;geeedzegh&amp;quot;.<br>
+Introduction<br>
+===========<br>
+[RFC 3514](https://tools.ietf.org/html/rfc3514)<br>
+in which a new MULTICAST_RANGE in a HTTP header field replaces the HTTP<br>
+Content-Range header and causes all requests for services that are not<br>
+RRS-compliant to cause them to fail.<br>
+There are a couple of use cases that it would be really<br>
+</p>
+<p>useful to support:</p>
+<p>
+- Overhead in the context of embedded APIs that need to poll<br>
+through all content sources.<br>
+- HTTP PUT, POST, and DELETE for web-based platforms to allow<br>
+nested responses and cache optimizations.<br>
+</p>
+<p>Here&amp;#x27;s why:</p>
+<p>
+1) Any non-HTTP/1.1 compliant request for a web based service to<br>
+that cannot be accomplished using a HTTP/1.1 compliant entity<br>
+body, will generate an error that the requested service does not<br>
+support HTTP. We feel this should be supported.<br>
+2) There are a host of interesting entities that do support<br>
+HTTP/1.1, like [well known plaintext connections](http://tools.ietf.<br>
+</p>
+
+
+  
+
+      </main>
+  </div>
+  <script type='text/javascript'>(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})(window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym"); ym(91504969,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:true});</script><noscript><div><img src='https://mc.yandex.ru/watch/91504969' style='position:absolute;left:-9999px;'/></div></noscript>
+  </body>
+</html>
